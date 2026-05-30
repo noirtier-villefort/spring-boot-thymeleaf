@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Spring</title>
+</head>
+<body>
+    <p> Hello <span th:text="${msg}"/> </p>
+
+    <form th:action="@{/greet}" method="post">
+        <input type="text" name="name" placeholder="Name"/>
+        <button type="submit">Send</button>
+    </form>
+
+    <p th:text="${name}"/>
+
+</body>
+</html>
